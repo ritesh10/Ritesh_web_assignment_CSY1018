@@ -1,0 +1,30 @@
+body{
+  font-size: 15px;font-family: cursive;margin: 0;line-height: 27px;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin: 0;padding: 0;
+}
+li{
+  list-style: none;
+}
+.navigation{
+  width:100%;
+  background: skyblue;
+  color: red;
+  text-align: center;
+}
+.navigation ul{
+  display: inline-flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+.navigation ul li{
+  font-size: 20px;
+  font-family:cursive;;
+  padding: 7%;
+  margin: 0  3%;
+}
+.navigation ul li:hover{
+  background: blue;
+}
+.
