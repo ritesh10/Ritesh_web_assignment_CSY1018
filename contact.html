@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<title>Page</title>
+  <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-		<title></title>
+  
 	</head>
 	<body>
+    <header>
+        <h2 class="heading">PORTFOLIO</h2><!--heading of my web page-->
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="photo">
+            <img src="images/ritesh.jpg" alt="Ritesh" title="Ritesh">
+          </div>
+        </div>
+    </header>
+	
+	  <section>
+        <h2>Contact</h2>
+		    <form><!--this is a form where   visitor will fill it with their information-->
+			   <label>First Name:</label><br>
+			       <input type="text" name="firstname" placeholder="first name"><br><br><!--There you write first name-->
+			     <label>Middle Name:</label><br>
+			       <input type="text" name="middlename" placeholder="Middle name(optional)"><br><br><!--There you write middle name and it is optional-->
+			       <label>Last Name:</label><br>
+			         <input type="text" name="lastname" placeholder="Last name"><br><br><!--There you write last name-->
+			       <label>Gender:</label><br><!--There you will choose your gender-->
+			         <input type="radio" name="gender" value="male">Male
+			          <input type="radio" name="gender" value="female">Female
+			          <input type="radio" name="gender" value="others">Others<br><br>
+			       <label>Contact:</label><br><!--There you write contact number-->
+			          <input type="number" name="contact" placeholder="contact number"><br><br>
+			       <label>Email:</label><br><!--There you write email-->
+			           <input type="email" name="Email" placeholder="Email id"><br><br>
+			         <label>Message</label><br><!--There you write the feedback-->
+			            <textarea name="message" rows="5" cols="50" placeholder= "Type your message here..."></textarea><br><br>
+			             <input type="submit" value="Submit" class="btn" title="Submit Data">
+	       </form>
+	 </section>
+	 <footer>
+       <div class="linkedin">
+        <h3>Connect with me:</h3><!--link to connect with me-->
+        <div class="link">
+         <a href="https://www.linkedin.com/in/ritesh-phuyal-8a2537136/"><img src="images/linkedin.gif" alt="connection to linkedin"></a>Linkedin<br><!--this is the image of linkedin-->
 
-	</body>
-	<form>
-		<label>First Name:</label>
-		<input type="text" name="firstname" placeholder="bhaktey"><br><br>
-		<label>Middle Name:</label>
-		<input type="text" name="firstname" placeholder="bhaktey (optional)"><br><br>
-		<label>Last Name:</label>
-		<input type="text" name="firstname" placeholder="bhaktey"><br><br>
-		<label>Gender:</label>
-		<input type="radio" name="gender" value="male">Male
-		<input type="radio" name="gender" value="female">Female
-		<input type="radio" name="gender" value="others">Others<br><br>
-		<label>Contact:</label>
-		<input type="number" name="contact" placeholder="contact number"><br><br>
-		<label>Email:</label>
-		<input type="email" name="Email" placeholder="Email id"><br><br>
-		<lebel>Message</lebel><br>
-		<textarea name="message" rows="5" cols="50" placeholder="type your messag here..."></textarea><br><br>
-		<input type="submit" value="Submit" class="btn" title="Submit Data">
-	</form>
+
+         <a href="https://www.instagram.com/"><img src="images/insta.jpg" alt="connection to instagram"></a>Instagram<br><!--this is the image of instagram-->
+          <a href="https://www.youtube.com/"><img src="images/download.jpg" alt="connection to instagram"></a>Youtube
+          </div><!--this is the image of Youtube-->
+         </div>
+       <div class="map">
+       <h2>MAP</h2>
+         <img src="images/map.gif" alt="map">
+       </div>
+       <div class="copyright">
+         <p> &copy;Copyright@2017</p>
+         <div class="all">
+         <div class="r">
+           <img src="images/r.gif" alt="logo of r"><!--this is a logo of my starting word of my first name-->
+           </div>
+           <div class="p">
+           <img src="images/p.gif" alt="logo of p"><!--this is a logo of my starting word of my last name-->
+           </div>
+           </div>
+         </div> 
+     </footer>
+  </body> 
 </html>

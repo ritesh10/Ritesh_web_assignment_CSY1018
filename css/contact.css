@@ -1,98 +1,128 @@
-body{  /*this is a body of my webpage*/
-font-family:cursive;
+body{/*this is a body of my webpage*/
+font-family: cursive;
 margin: 0;
 line-height: 27px;
+background: url("../images/sun.jpg");
+background-repeat:no-repeat;
+background-size: cover;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
 }
-.heading{/*this is a heading of my webpage*/
+header{/*this is width of header*/
+  width: 100%;
+  margin: 0;
+}
+.heading{
   font-family:Algerian ;
   font-size: 38px;
   color: red;
   text-align: center;/*to make my heading in center */
   padding-bottom: 3%;
+  width: 100%;
   background:black;
 }
-header{
-  width:100%;/*this is width of header*/
-}
 .navigation{/*this is navigation part*/
+  background:gray;
   color: blue;
   text-align: center;
   width:100%;
   background: url(../images/img.jpg);
   background-repeat: repeat;/*background image will repeat */
-  display: inline-flex; 
-  flex-direction: row; /* to make section in row */
+  display: inline-flex;
+  flex-direction: row;/* to make section row */
   justify-content: space-around;
+
 }
+
 .photo img{
   width: 6em;
-  border-radius: 10px;/* the photo will be round at*/
+  border-radius: 10px;/* the photo will be round at */
 }
 .photo img:hover{
   transform: rotate(360deg);
-  transition: transform 1.5s ease-in-out;/*the photo will rotate */
+  transition: transform 1.5s ease-in-out;
 }
 .navigation ul{
   display: inline-flex;
-  flex-direction:row;
+  flex-direction:row;/*navigation will be in row */
   justify-content:space-around;
   padding-top: 20px;
-
-}
-.navigation ul li{
-  font-size: 20px;
-  font-family: cursive;
-  padding: 5%;
-  margin: 0  3%;
-}
-.navigation a{
-  text-decoration: none;/*the text decoration will be null*/
-   line-height: 45px;
 }
 .navigation li{
   list-style: none;
   padding-top: 10px;
-  }
+}
+.navigation ul li{
+  font-size: 20px;
+  font-family: cursive;
+  padding: 10%;
+  
+}
+.navigation a{
+  text-decoration: none;/*the text decoration will be null*/
+   line-height: 45px;
+   }
 .navigation ul li:hover{
-  background: black;
+   background: black;/*the navigation bar will be black while you put curser*/
   border-radius: 8px;
 }
 .navigation a:hover{
-  color: red;
-}
-section h2{/*this is the heading of section*/
- text-align: center; 
- color: brown;
- font-family: algerian;/*the is the fontstyle of the text*/
-}
-.pic img{
-border-radius: 25px;
-width: 5em;
-display: block;
-margin: auto;
-width: 20%;
-}
-section{
-  background-color: #087dfa;/*this is the color of section*/
- 
-}
-.introduction {
-   margin:0 7% 0 7%;/*margin for the paragraph part*/
+  color: red;/*color of word of navigation will be red*/
  }
-.introduction p{
-text-align:justify;/*this will make a straight on the line and makes attractive too*/
+section{
+  width: 100%;
+  height: 100%;
 }
-.introduction h3{
-  text-align: center;/*to make text in the center*/
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  color: white;
+  width: 100%;
+  padding-bottom:20%;
+}
+section h2{
+  text-align: center;
+  color:purple;
+  font-family: algerian;
+}
+form
+{
+	padding: 2% 0 1% 1%;
+  display: block;
+  margin: 0% 5% 10% 25%;
+  width: 70%;
+   color: yellow;
+}
+input
+{
+	padding: 1.5% 5%;
+	border-radius: 20px;
+  color:red;
+}
+textarea
+{
+	border-radius: 20px;
+  padding: 1.5%;
+}
+.btn
+{
+	padding: 1.5% 10%;
+	background-color: #fdca8b;
+	border-radius: 4px;
+	border: none;
+}
+.btn:hover{
+ background: red;/* background color will change when you will put curser*/
+ cursor: pointer;
+ color:white;/* color will change you will put curser*/
 }
 footer{
   display: flex;flex-direction: row;/*using flex property flex will cone in straight line as u mention 
-  weather inrow or column*/
+  whether in row or column*/
   background: black;
-    background: url(../images/img.jpg);
+  background: url(../images/img.jpg);
   background-repeat: repeat;
 
 }
@@ -116,7 +146,6 @@ width: 33%;
 }
 .linkedin h3{
   color: green;
-  padding-left: 5%;
 }
 .copyright{
 color: green;
@@ -125,8 +154,9 @@ font-size: 20px;
 text-shadow: 3px 3px 3px darkred;/*this show shadow on text */
 padding-left: 5%;
 }
+}
 .map{
-margin: 0% 10% 0% 10%;
+margin: 0% 10% 0% 0%;
 width: 33%;
 }
 .map img{
@@ -144,7 +174,6 @@ width: 33%;
 .r{
   animation: front 4s infinite;
   animation-timing-function: ease-out;/*animation done here where logo will move as instruction*/
- position: relative;
  position: relative;
 }
 .p{
@@ -172,9 +201,6 @@ width: 33%;
 @media screen and (max-width: 480px){
   body{/*this is for mobile view*/
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background: orange;
 }
 .heading{
   font-size: 38px;
@@ -207,18 +233,15 @@ header{
   font-size: 20px;
   font-family: cursive;
   padding: 0%;
-  margin: 0  0%;
+  margin: 0%  0%;
 
 }
-
 section{
   background: url("../images/sun.jpg");
   background-repeat:no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
-
-
 }
 .section{
   display: flex;
@@ -227,6 +250,36 @@ section{
   color: white;
   width: 100%;
   padding-bottom:20%;
+}
+
+form
+{
+  padding: 0% 0 0% 5%;
+  display: block;/*this will make a section in middle part*/
+  margin: 0% 0% 0% 0%;
+  width: 100%;
+}
+input
+{
+  padding: 1.5% 0%;
+  border-radius: 20px;/*it will make a round at boarder*/
+}
+textarea
+{
+  width: 70%;
+  border-radius: 20px;
+}
+.btn
+{
+  padding: 0% 0%;
+  background-color: #fdca8b;
+  border-radius: 4px;
+  border: none;
+}
+.btn:hover{
+ background: #A57809;/*while you put curser on it than the color will change*/
+ cursor: pointer;
+ font-weight: bold;
 }
 footer{
   display: flex;flex-direction: column;
@@ -242,8 +295,11 @@ footer{
    height: 25px;
    -webkit-transition: width 2s, height 2s;
     transition: width 2s, height 4s;
+   
 }
 .linkedin{
+ margin: 0% 0% 0% 0%;
+padding-left: 0%;
 width: 100%;
 }
 .linkedin h3{

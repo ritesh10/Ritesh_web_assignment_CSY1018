@@ -1,18 +1,18 @@
-body{  /*this is a body of my webpage*/
-font-family:cursive;
+body{/*this is a body of my webpage*/
+font-family: cursive;
 margin: 0;
 line-height: 27px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
 }
-.heading{/*this is a heading of my webpage*/
-  font-family:Algerian ;
+.heading{
+  font-family: Algerian;
   font-size: 38px;
   color: red;
   text-align: center;/*to make my heading in center */
   padding-bottom: 3%;
-  background:black;
+  background: black;
 }
 header{
   width:100%;/*this is width of header*/
@@ -23,71 +23,74 @@ header{
   width:100%;
   background: url(../images/img.jpg);
   background-repeat: repeat;/*background image will repeat */
-  display: inline-flex; 
-  flex-direction: row; /* to make section in row */
+  display: flex;
+  flex-direction: row;/* to make section row */
   justify-content: space-around;
 }
+
 .photo img{
   width: 6em;
-  border-radius: 10px;/* the photo will be round at*/
+  border-radius: 10px;/* the photo will be round at */
 }
 .photo img:hover{
   transform: rotate(360deg);
   transition: transform 1.5s ease-in-out;/*the photo will rotate */
 }
 .navigation ul{
-  display: inline-flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction:row;/*navigation will be in row */
   justify-content:space-around;
   padding-top: 20px;
-
 }
 .navigation ul li{
   font-size: 20px;
   font-family: cursive;
-  padding: 5%;
-  margin: 0  3%;
+  padding: 10%;
+ list-style: none;
+  padding-top: 10px;
 }
 .navigation a{
   text-decoration: none;/*the text decoration will be null*/
    line-height: 45px;
 }
-.navigation li{
-  list-style: none;
-  padding-top: 10px;
-  }
 .navigation ul li:hover{
-  background: black;
+  background: black;/*the navigation bar will be black while you put curser*/
   border-radius: 8px;
 }
 .navigation a:hover{
-  color: red;
-}
-section h2{/*this is the heading of section*/
- text-align: center; 
- color: brown;
- font-family: algerian;/*the is the fontstyle of the text*/
-}
-.pic img{
-border-radius: 25px;
-width: 5em;
-display: block;
-margin: auto;
-width: 20%;
+  color: red;/*color of word of navigation will be red*/
 }
 section{
-  background-color: #087dfa;/*this is the color of section*/
- 
+  background: url("../images/sun.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+
 }
-.introduction {
-   margin:0 7% 0 7%;/*margin for the paragraph part*/
- }
-.introduction p{
-text-align:justify;/*this will make a straight on the line and makes attractive too*/
+.section{
+  display: flex;
+  flex-direction: row;/*navigation will be in row */
+  justify-content:space-between;
+  color: white;
+  width: 100%;
+  padding-bottom:20%;
 }
-.introduction h3{
-  text-align: center;/*to make text in the center*/
+.cv{
+  background-repeat:no-repeat;
+  width: 32%;
 }
+.cv p{
+  padding-left: 10px;
+  padding-right: 2px;
+
+}
+.cv h2{
+  color: rgb(100, 130, 115);/*color of head*/
+  padding-left: 10px;
+}
+
 footer{
   display: flex;flex-direction: row;/*using flex property flex will cone in straight line as u mention 
   weather inrow or column*/
@@ -111,7 +114,7 @@ footer{
 }
 .linkedin{
 margin: 0% 2% 0% 0%;
-padding-left: 2%;
+padding-left: 5%;
 width: 33%;
 }
 .linkedin h3{
@@ -145,7 +148,6 @@ width: 33%;
   animation: front 4s infinite;
   animation-timing-function: ease-out;/*animation done here where logo will move as instruction*/
  position: relative;
- position: relative;
 }
 .p{
   animation: back 4s infinite;
@@ -161,7 +163,7 @@ width: 33%;
   margin: 15% 0% 0% 40%;
 }
 @keyframes front{/*this is a instruction given to move in which direction
-  and how uch to move*/
+  and how much to move*/
   from{left:0px;}
   to{left:20px;}
 }
@@ -174,7 +176,6 @@ width: 33%;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: orange;
 }
 .heading{
   font-size: 38px;
@@ -200,7 +201,7 @@ header{
 }
 .navigation ul{
   display: flex;
-  flex-direction:column;
+  flex-direction:column;/*navigation will be in colume*/
   margin-top: 0%;
 }
 .navigation ul li{
@@ -228,6 +229,24 @@ section{
   width: 100%;
   padding-bottom:20%;
 }
+.cv{
+  background-repeat:no-repeat;
+  width: 100%;
+   padding: 0% 0% 0% 0%;
+   color:black;
+}
+.cv p{
+ text-align: center;
+ text-align: justify;
+ width: 90%;
+
+}
+.cv h2{
+  color: rgb(100, 130, 115);
+  text-align: center;
+  color: white;
+
+}
 footer{
   display: flex;flex-direction: column;
   background: black;
@@ -244,6 +263,8 @@ footer{
     transition: width 2s, height 4s;
 }
 .linkedin{
+margin: 0% 0% 0% 0%;
+padding-left: 0%;
 width: 100%;
 }
 .linkedin h3{

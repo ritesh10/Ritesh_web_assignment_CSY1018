@@ -1,19 +1,20 @@
-body{  /*this is a body of my webpage*/
-font-family:cursive;
+body{/*this is a body of my webpage*/
+font-family: cursive;
 margin: 0;
 line-height: 27px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
 }
-.heading{/*this is a heading of my webpage*/
+.heading{
   font-family:Algerian ;
   font-size: 38px;
   color: red;
   text-align: center;/*to make my heading in center */
+  background-color:silver;
   padding-bottom: 3%;
-  background:black;
-}
+  background: black;
+ }
 header{
   width:100%;/*this is width of header*/
 }
@@ -23,17 +24,27 @@ header{
   width:100%;
   background: url(../images/img.jpg);
   background-repeat: repeat;/*background image will repeat */
-  display: inline-flex; 
-  flex-direction: row; /* to make section in row */
+  display: inline-flex;
+  flex-direction: row;/* to make section row */
   justify-content: space-around;
 }
 .photo img{
   width: 6em;
-  border-radius: 10px;/* the photo will be round at*/
+  border-radius: 10px;/* the photo will be round at */
 }
 .photo img:hover{
-  transform: rotate(360deg);
-  transition: transform 1.5s ease-in-out;/*the photo will rotate */
+  animation: ritesh 2s linear alternate;/*the photo will rotate */
+}
+@keyframes ritesh{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 .navigation ul{
   display: inline-flex;
@@ -57,41 +68,43 @@ header{
   padding-top: 10px;
   }
 .navigation ul li:hover{
-  background: black;
+  background: black;/*the navigation bar will be black while you put curser*/
   border-radius: 8px;
 }
 .navigation a:hover{
-  color: red;
+  color: red;/*color of word of navigation will be red*/
+
 }
-section h2{/*this is the heading of section*/
- text-align: center; 
- color: brown;
- font-family: algerian;/*the is the fontstyle of the text*/
+.college{
+  display: flex;flex-direction:row;/*using flex property flex will cone in straight line as u mention 
+  weather inrow or column*/
+  justify-content: space-around;
+ background-color:#087dfa;/*this is a background color*/
+  }
+  .college h2{
+    font-family: algerian;
+    color: purple;
+
+  }
+  .pic img{
+  
+   border-radius: 10px;/*this is make a round on border as desire*/
+   display: block;
+    width: 50%;
+  }
+.name{
+  width: 20%;
+  padding:0% 5% 0% 5%;
+  background-color: white;
 }
-.pic img{
-border-radius: 25px;
-width: 5em;
-display: block;
-margin: auto;
-width: 20%;
+.class{
+  width: 40%;
+    padding:0% 20% 0% 5%;
 }
-section{
-  background-color: #087dfa;/*this is the color of section*/
- 
-}
-.introduction {
-   margin:0 7% 0 7%;/*margin for the paragraph part*/
- }
-.introduction p{
-text-align:justify;/*this will make a straight on the line and makes attractive too*/
-}
-.introduction h3{
-  text-align: center;/*to make text in the center*/
-}
+
 footer{
   display: flex;flex-direction: row;/*using flex property flex will cone in straight line as u mention 
   weather inrow or column*/
-  background: black;
     background: url(../images/img.jpg);
   background-repeat: repeat;
 
@@ -104,11 +117,11 @@ footer{
    -webkit-transition: width 2s, height 2s;
     transition: width 2s, height 4s;
     padding-left: 5%;/*image will move in given time*/
-  }
-  .link :hover{/*image will become larger while you touch by courser */
+}
+.link :hover{/*image will become larger while you touch by courser */
     width: 35px;
     height: 35px;
-}
+    }
 .linkedin{
 margin: 0% 2% 0% 0%;
 padding-left: 2%;
@@ -126,7 +139,7 @@ text-shadow: 3px 3px 3px darkred;/*this show shadow on text */
 padding-left: 5%;
 }
 .map{
-margin: 0% 10% 0% 10%;
+margin: 0% 10% 0% 5%;
 width: 33%;
 }
 .map img{
@@ -142,39 +155,36 @@ width: 33%;
   display: flex; flex-direction: row;
 }
 .r{
-  animation: front 4s infinite;
+  animation:front 4s infinite;
   animation-timing-function: ease-out;/*animation done here where logo will move as instruction*/
- position: relative;
  position: relative;
 }
 .p{
-  animation: back 4s infinite;
-  animation-timing-function: ease-out;/*same as above in .r*/
+  animation:back 4s infinite;
+  animation-timing-function: ease-out;/*animation done here where logo will move as instruction*/
   position: relative;
 }
 .r img{
   width: 100px; 
-  margin: 15% 20% 0% 0%;
+    margin: 15% 20% 0% 0%;
 }
 .p img{
   width: 100px;
-  margin: 15% 0% 0% 40%;
+   margin: 15% 0% 0% 40%;
 }
 @keyframes front{/*this is a instruction given to move in which direction
   and how uch to move*/
   from{left:0px;}
   to{left:20px;}
 }
-@keyframes back{/*same as above instruction in front*/
+@keyframes back{/*this is a instruction given to move in which direction
+  and how much to move*/
   from{right:0px;}
   to{right:20px;}
 }
 @media screen and (max-width: 480px){
   body{/*this is for mobile view*/
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background: orange;
 }
 .heading{
   font-size: 38px;
@@ -201,36 +211,42 @@ header{
 .navigation ul{
   display: flex;
   flex-direction:column;
-  margin-top: 0%;
+  margin-top: 1%;
 }
 .navigation ul li{
   font-size: 20px;
   font-family: cursive;
   padding: 0%;
-  margin: 0  0%;
-
+  margin: 0%  0%;
 }
+.college{
+  display: flex;flex-direction:column;
+  justify-content: space-around;
+ background-color:#087dfa;
+  }
+  .college h2{
+    font-family: algerian;
+    color: purple;
 
-section{
-  background: url("../images/sun.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
+  }
+  .pic img{
+  
+   border-radius: 10px;
+   display: block;
+    width: 50%;
+    background: orange;
+  }
+.name{
   width: 100%;
-  height: 100%;
-
-
+  padding:0% 0% 0% 0%;
+  background: #087dfa;
 }
-.section{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  color: white;
+.class{
   width: 100%;
-  padding-bottom:20%;
+    padding:0% 0% 0% 0%;
 }
 footer{
   display: flex;flex-direction: column;
-  background: black;
     background: url(../images/img.jpg);
   background-repeat: repeat;
 
@@ -242,6 +258,7 @@ footer{
    height: 25px;
    -webkit-transition: width 2s, height 2s;
     transition: width 2s, height 4s;
+    padding-left: 5%;
 }
 .linkedin{
 width: 100%;
@@ -288,7 +305,7 @@ width: 90%;
 }
 .p img{
   width: 80px;
-  margin: 0% 0% 0% 40%;
+  margin: 0% 0% 0% 50%;
 }
 @keyframes front{
   from{left:0px;}
