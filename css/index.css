@@ -1,7 +1,6 @@
 body{/*this is a body of my webpage*/
 font-family: cursive;
 margin: 0;
-line-height: 27px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
@@ -43,11 +42,8 @@ header{
   padding-top: 20px;
 }
 .navigation ul li{
-  font-size: 20px;
-  font-family: cursive;
-  padding: 10%;
- list-style: none;
-  padding-top: 10px;
+  list-style: none;
+  margin: 10%;
 }
 .navigation a{
   text-decoration: none;/*the text decoration will be null*/
