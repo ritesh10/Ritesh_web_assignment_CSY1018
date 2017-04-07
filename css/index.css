@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
   font-size: 38px;
   color: red;
   text-align: center;/*to make my heading in center */
-  padding-bottom: 3%;
+  padding-bottom: 1%;
   background: black;
 }
 header{
@@ -74,13 +74,15 @@ section{
   display: flex;
   flex-direction: row;/*navigation will be in row */
   justify-content:space-between;
-  color: white;
+  color: black;
   width: 100%;
   padding-bottom:20%;
+  text-align: justify;
 }
 .cv{
   background-repeat:no-repeat;
   width: 32%;
+ 
 }
 .cv p{
   padding-left: 10px;
@@ -88,7 +90,7 @@ section{
 
 }
 .cv h2{
-  color: rgb(100, 130, 115);/*color of head*/
+  color: White;/*color of head*/
   padding-left: 10px;
 }
 
@@ -273,7 +275,7 @@ width: 100%;
 }
 .copyright{
 color: red;
-width: 100%;
+width: 90%;
 font-size: 20px;
 text-shadow: 3px 3px 3px darkred;
 margin: 2% auto auto 0%;
@@ -293,13 +295,13 @@ width: 90%;
   font-family: algerian;
 }
 .r{
-  animation: front 4s infinite;
+  animation: front 0s infinite;
   animation-timing-function: ease-out;
  position: relative;
  width: 30%;
 }
 .p{
-  animation: back 4s infinite;
+  animation: back 0s infinite;
   animation-timing-function: ease-out;
   position: relative;
   width: 30%;
@@ -311,12 +313,4 @@ width: 90%;
 .p img{
   width: 80px;
   margin: 0% 0% 0% 40%;
-}
-@keyframes front{
-  from{left:0px;}
-  to{left:20px;}
-}
-@keyframes back{
-  from{right:0px;}
-  to{right:20px;}
 }

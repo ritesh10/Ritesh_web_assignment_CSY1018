@@ -6,7 +6,7 @@
 body{  /*this is a body of my webpage*/
 font-family:cursive;
 margin: 0;
-line-height: 27px;
+
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
@@ -177,7 +177,6 @@ width: 33%;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: orange;
 }
 .heading{
   font-size: 38px;
@@ -227,7 +226,6 @@ section{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  color: white;
   width: 100%;
   padding-bottom:20%;
 }
@@ -247,17 +245,17 @@ footer{
     transition: width 2s, height 4s;
 }
 .linkedin{
-width: 100%;
+width: 90%;
 }
 .linkedin h3{
   color: green;
 }
 .copyright{
 color: red;
-width: 100%;
+width: 90%;
 font-size: 20px;
 text-shadow: 3px 3px 3px darkred;
-margin: 2% auto auto 0%;
+margin: 2% 0% 0% 0%;
 }
 .copyright p{
 color: green;
@@ -274,13 +272,13 @@ width: 90%;
   font-family: algerian;
 }
 .r{
-  animation: front 4s infinite;
+  animation: front 0s infinite;
   animation-timing-function: ease-out;
  position: relative;
  width: 30%;
 }
 .p{
-  animation: back 4s infinite;
+  animation: back 0s infinite;
   animation-timing-function: ease-out;
   position: relative;
   width: 30%;
@@ -292,12 +290,4 @@ width: 90%;
 .p img{
   width: 80px;
   margin: 0% 0% 0% 40%;
-}
-@keyframes front{
-  from{left:0px;}
-  to{left:20px;}
-}
-@keyframes back{
-  from{right:0px;}
-  to{right:20px;}
 }

@@ -6,7 +6,6 @@
 body{/*this is a body of my webpage*/
 font-family: cursive;
 margin: 0;
-line-height: 27px;
 }
 h1,h2,h3,h4,h5,h6,p,ul{
   margin: 0;padding: 0;
@@ -16,7 +15,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
   font-size: 38px;
   color: red;
   text-align: center;/*to make my heading in center */
-  background-color:silver;
   padding-bottom: 3%;
   background: black;
  }
@@ -264,14 +262,14 @@ footer{
     padding-left: 5%;
 }
 .linkedin{
-width: 100%;
+width: 90%;
 }
 .linkedin h3{
   color: green;
 }
 .copyright{
 color: red;
-width: 100%;
+width: 90%;
 font-size: 20px;
 text-shadow: 3px 3px 3px darkred;
 margin: 2% auto auto 0%;
@@ -291,13 +289,13 @@ width: 90%;
   font-family: algerian;
 }
 .r{
-  animation: front 4s infinite;
+  animation: front 0s infinite;
   animation-timing-function: ease-out;
  position: relative;
  width: 30%;
 }
 .p{
-  animation: back 4s infinite;
+  animation: back 0s infinite;
   animation-timing-function: ease-out;
   position: relative;
   width: 30%;
@@ -309,12 +307,4 @@ width: 90%;
 .p img{
   width: 80px;
   margin: 0% 0% 0% 50%;
-}
-@keyframes front{
-  from{left:0px;}
-  to{left:20px;}
-}
-@keyframes back{
-  from{right:0px;}
-  to{right:20px;}
 }
